@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+body {
+  background-color: #eee;
+  color: #333;
+  margin: 0;
+  transition: 0.2s linear;
+  font-family: "Dosis", sans-serif;
+}
+body .toggle {
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+}
+body .toggle .checkbox {
+  display: none;
+}
+body .toggle .label {
+  height: 26px;
+  width: 50px;
+  background-color: #b6b6b6;
+  padding: 5px 8px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  transform: scale(1.2);
+  box-shadow: 2px 1px 1px #333;
+}
+body .toggle .label .ball {
+  background-color: #eee;
+  border-radius: 50%;
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  transform: translateX(0);
+  transition: 0.4s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+}
+body .toggle .label .fa-moon {
+  color: #333;
+}
+body .toggle .checkbox:checked + .label .ball {
+  transform: translateX(29px);
+}
+body main {
+  margin: 3rem auto 0;
+  width: 550px;
+  background-color: #74b2bd;
+  padding: 1rem 2rem 2rem;
+  box-shadow: 1px 2px 6px #333;
+  border-radius: 4px;
+}
+body main .img {
+  background: url(./media/basic-pics/Screen-Shot-2019-04-15-at-10.51.54-PM.png) no-repeat 100%/cover;
+  height: 280px;
+  border-radius: 4px;
+}
+
+body.dark {
+  background-color: #333;
+}
+body.dark .label {
+  box-shadow: 2px 1px 1px #09fbba;
+  background-color: #888;
+}
+body.dark .label .ball {
+  background-color: #09fbba;
+}
+body.dark main {
+  background-color: #09fbba;
+}
+
+/*# sourceMappingURL=style.css.map */
